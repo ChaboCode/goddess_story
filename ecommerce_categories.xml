@@ -1,0 +1,20 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<odoo>
+    <record id="category_root" model="product.public.category">
+        <field name="name">Goddess Story</field>
+        <field name="sequence">10</field>
+    </record>
+
+    <!-- Subcategories -->
+    <record id="category_display" model="product.public.category">
+        <field name="name">Cajas - Displays</field>
+        <field name="parent_id" ref="category_root"/>
+        <field name="sequence">10</field>
+    </record>
+
+    <record id="category_pack" model="product.public.category">
+        <field name="name">Packs</field>
+        <field name="parent_id" ref="category_root"/>
+        <field name="sequence">20</field>
+    </record>
+</odoo>

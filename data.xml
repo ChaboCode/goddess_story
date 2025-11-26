@@ -1,0 +1,40 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<odoo>
+    <record id="uom_category_goddess_story" model="uom.category">
+        <field name="name">Goddess Story</field>
+        <!-- <field name="measure_type">unit</field> -->
+    </record>
+
+    <record id="uom_reference_pack" model="uom.uom">
+        <field name="name">Pack</field>
+        <field name="category_id" ref="uom_category_goddess_story" />
+        <field name="factor" eval="1.0" />
+        <field name="rounding" eval="0.01" />
+        <field name="uom_type">reference</field>
+    </record>
+
+    <record id="uom_box_30" model="uom.uom">
+        <field name="name">Box (30)</field>
+        <field name="category_id" ref="uom_category_goddess_story" />
+        <field name="factor" eval="1.0" />
+        <field name="rounding" eval="0.01" />
+        <field name="uom_type">bigger</field>
+    </record>
+
+    <record id="uom_box_20" model="uom.uom">
+        <field name="name">Box (20)</field>
+        <field name="category_id" ref="uom_category_goddess_story" />
+        <field name="factor" eval="1.0" />
+        <field name="rounding" eval="0.01" />
+        <field name="uom_type">bigger</field>
+    </record>
+
+    <record id="uom_box_18" model="uom.uom">
+        <field name="name">Box (18)</field>
+        <field name="category_id" ref="uom_category_goddess_story" />
+        <field name="factor" eval="1.0" />
+        <field name="rounding" eval="0.01" />
+        <field name="uom_type">bigger</field>
+    </record>
+</odoo>

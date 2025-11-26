@@ -1,0 +1,45 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<odoo>
+    <record id="goddess_story_action" model="ir.actions.act_window">
+        <field name="name">Goddess Story Action</field>
+        <field name="res_model">goddess_story</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="goddess_story_view_tree" model="ir.ui.view">
+        <field name="name">goddess_story.tree</field>
+        <field name="model">goddess_story</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="code" />
+                <field name="price_per_pack" />
+            </list>
+        </field>
+    </record>
+
+    <record id="goddess_story_view_form" model="ir.ui.view">
+        <field name="name">goddess_story.form</field>
+        <field name="model">goddess_story</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="code" />
+                        <field name="tier" />
+                        <field name="set_num" />
+                    </group>
+                </sheet>
+                <sheet>
+
+                    <group>
+                        <field name="price_per_pack" />
+                        <field name="price_per_box" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <menuitem id="goddess_story_menu_action" action="goddess_story_action" />
+</odoo>

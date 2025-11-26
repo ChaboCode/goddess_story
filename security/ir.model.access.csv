@@ -1,0 +1,2 @@
+id,name,model_id,group_id,perm_read,perm_write,perm_create,perm_unlink
+access_goddess_story,access_goddess_story,goddess_story,,1,1,1,1
